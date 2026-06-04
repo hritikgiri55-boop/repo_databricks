@@ -1,6 +1,7 @@
 # Databricks notebook source
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
+from pyspark.windows import windows
 
 spark = SparkSession.builder.appName("Creating_pivot").getOrCreate()
 
